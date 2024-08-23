@@ -1,0 +1,187 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1870px;
+}
+
+.main {
+  padding-bottom: 49px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: var(--black);
+}
+
+.subtitle {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000;
+}
+
+.btn-reset {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 16px;
+}
+
+.btn--filled {
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--orange);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn--filled:focus-visible {
+  outline: none;
+  background-color: var(--yellow);
+}
+
+.btn--filled:hover {
+  background-color: var(--yellow);
+}
+
+.btn--filled:active {
+  background-color: var(--dark-orange);
+}
+
+.list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000;
+}
+
+.link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.card {
+  border: 1px solid var(--light-gray);
+  border-radius: 32px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (max-width: 1280px) {
+  .main {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding-bottom: 30px;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .card {
+    border: none;
+  }
+
+  .subtitle {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+
+  }
+
+  .btn {
+    font-size: 12px;
+    border-radius: 8px;
+  }
+}
+
+

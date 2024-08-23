@@ -1,0 +1,156 @@
+/*hero*/
+.hero {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.hero__container {
+  padding: 100px 80px;
+  min-height: 620px;
+  background-color: var(--bg-alt);
+  background-image: url(../img/cover-evklid.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 32px;
+}
+
+
+.hero__content {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 837px;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+  color: var(--white);
+}
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: 90px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--white);
+}
+
+.hero__btn {
+  padding: 26px 39px;
+  max-width: 400px;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+
+@media (max-width: 1280px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .hero__container {
+    padding: 160px 77px;
+    min-height: 668px;
+    background-image: url(../img/cover-evklid-1024.png);
+    border-radius: 32px;
+  }
+
+  .hero__content {
+    max-width: 770px;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .hero__descr {
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__btn {
+    padding: 24px 35px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .hero__container {
+    padding: 160px 40px;
+    min-height: 662px;
+    background-image: url(../img/cover-evklid-768.png);
+    border-radius: 24px;
+  }
+
+  .hero__content {
+    max-width: 588px;
+  }
+
+  .hero__title {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .hero__descr {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .hero__btn {
+    padding: 25px 39px;
+    font-size: 23px;
+    line-height: 28px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .hero {
+    padding-top: 19px;
+    padding-bottom: 30px;
+  }
+
+  .hero__container {
+    padding: 60px 22px;
+    min-height: 308px;
+    background-image: url(../img/cover-evklid-320.png);
+    border-radius: 16px;
+  }
+
+  .hero__content {
+    min-width: 247px;
+    text-align: center;
+  }
+
+  .hero__title {
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .hero__descr {
+    margin-bottom: 32px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .hero__btn {
+    padding: 13px 28px;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 8px;
+  }
+}

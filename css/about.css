@@ -1,0 +1,321 @@
+/*about*/
+.about {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.about__container {
+  flex-direction: column;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__descr {
+  margin-bottom: 50px;
+  max-width: 1235px;
+}
+
+.about__cards {
+  gap: 32px;
+}
+
+.about__wrap {
+  flex-direction: column;
+  gap: 32px;
+  width: calc(870 / 1770 * 100%);
+}
+
+.about__item--big {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 870px;
+  width: 100%;
+  min-height: 622px;
+  background-color: var(--bg-alt);
+  background-image: url(../img/about-working-man.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 32px;
+}
+
+.overlay {
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 32px;
+}
+
+.overlay__text {
+  max-width: 433px;
+  color: var(--white);
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.btn--transperent {
+  margin-left: auto;
+  margin-top: 10px;
+  padding: 20px 36px;
+  font-weight: 700;
+  line-height: 0.9;
+  color: var(--white);
+  border: 3px solid var(--orange);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn--transperent:focus-visible {
+  outline: none;
+  background-color: var(--orange);
+}
+
+.btn--transperent:hover {
+  background-color: var(--orange);
+}
+
+.btn--transperent:active {
+  background-color: var(--dark-orange);
+  border-color: var(--dark-orange);
+}
+
+.card--small {
+  align-items: flex-start;
+  padding: 65px 115px 64px 60px;
+  background-size: 0;
+}
+
+.card--small::before {
+  content: "";
+  flex-shrink: 0;
+  margin-right: 50px;
+  width: calc(190 / (870 - 60 - 116) * 100%);
+  padding-top: calc(165 / (870 - 60 - 116) * 100%);
+  background-image: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card__text {
+  max-width: 450px;
+}
+
+.card__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .about__cards {
+    flex-wrap: wrap;
+  }
+
+  .about__wrap {
+    width: 100%;
+  }
+
+  .about__item--big {
+    max-width: 1312px;
+    min-height: 740px;
+}
+
+  .small-cards {
+    flex-direction: row;
+  }
+
+  .card--small {
+    padding: 30px;
+    width: 50%;
+  }
+  .card--small::before {
+      align-self: center;
+      margin-right: 20px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+  .about {
+    padding-top: 19px;
+    padding-bottom: 40px;
+  }
+
+  .about__title {
+    line-height: 55px;
+  }
+
+
+  .about__descr {
+    margin-bottom: 60px;
+  }
+
+  .about__cards {
+    flex-direction: column;
+  }
+
+  .about__wrap {
+    width: 100%;
+  }
+
+  .about__item--big {
+    max-width: 100%;
+    min-height: 640px;
+    background-image: url(../img/about-workingman-1024.png);
+}
+
+.btn--transperent {
+  padding: 20px 36px;
+}
+
+.card--small {
+  width: 100%;
+  padding: 65px 65px 63px 77px;
+}
+
+.card--small::before {
+  width: calc(190 / (924 - 77 - 65) * 100%);
+  padding-top: calc(165 / (924 - 77 - 65) * 100%);
+}
+}
+
+
+@media (max-width: 900px) {
+  .about__item--big {
+    min-height: 650px;
+    border-radius: 24px;
+}
+
+.overlay {
+  padding: 34px 40px;
+  border-radius: 24px;
+}
+
+.overlay__text {
+  max-width: 366px;
+}
+
+.btn--transperent {
+  margin-top: 4px;
+}
+
+.about__descr {
+  margin-bottom: 55px;
+}
+
+.card--small {
+  width: 100%;
+  padding: 35px 40px 33px 40px;
+  border-radius: 24px;
+}
+
+.card--small::before {
+  align-self: center;
+  margin-right: 16px;
+  width: calc(114 / (668 - 40 - 40) * 100%);
+  padding-top: calc(99 / (668 - 40 - 40) * 100%);
+
+}
+}
+
+
+@media (max-width: 576px) {
+  .about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .about__title {
+    line-height: 29px;
+  }
+
+  .about__descr {
+    margin-bottom: 14px;
+  }
+
+  .about__item--big {
+    display: block;
+    min-height: auto;
+    background-size: 0;
+    background-image: url(../img/about-workingman-320.jpg);
+    background-color: transparent;
+
+  }
+
+  .about__item--big::before {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    padding-top: calc(200 / 290 * 100%);
+    background-color: goldenrod;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .overlay {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    width: 100%;
+
+    background-color: transparent;
+    border-radius: 32px;
+  }
+
+  .overlay__text {
+    margin-bottom: 9px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--black);
+  }
+
+  .btn--transperent {
+    margin-left: 0;
+    padding: 12px 43px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 0.9;
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .btn--transperent:focus-visible {
+    outline: none;
+    color: var(--white);
+  }
+
+  .btn--transperent:hover {
+    color: var(--white);
+  }
+
+  .btn--transperent:active {
+    color: var(--white);
+  }
+
+  .card--small {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .card--small::before {
+    content: "";
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-right: 0;
+    margin-bottom: 12px;
+    padding-top: 49px;
+    width: 64px;
+  }
+
+  /* .subtitle--gears {
+    margin-bottom: 1px;
+  } */
+}

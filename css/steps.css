@@ -1,0 +1,172 @@
+/*steps*/
+.steps {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.steps__info {
+  margin-right: 50px;
+  width: calc(758 / 1770 * 100%);
+}
+
+.steps .title {
+  margin-bottom: 34px;
+}
+
+.steps .subtitle {
+  margin-bottom: 10px;
+}
+
+.steps__wrap::after {
+  content: "";
+  margin-left: auto;
+  margin-top: 10px;
+  width: calc(870 / 1770 * 100%);
+  min-height: 460px;
+  background-color: var(--bg-alt);
+  background-image: url(../img/steps-work.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 32px;
+}
+
+.steps__texts {
+  margin-bottom: 49px;
+  max-width: 760px;
+}
+
+.steps__btns {
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.steps__btn {
+  padding: 20px 38px;
+}
+
+.steps__btn--black {
+  border: 1px solid var(--black);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.steps__btn--black:focus-visible {
+  color: var(--white);
+  background-color: var(--dark-gray);
+  border-color: var(--dark-gray);
+  outline: none;
+}
+
+.steps__btn--black:hover {
+  color: var(--white);
+  background-color: var(--dark-gray);
+  border-color: var(--dark-gray);
+}
+
+.steps__btn--black:active {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+@media (max-width: 1280px) {
+  .steps {
+    padding-top: 37px;
+  }
+
+  .steps .title {
+    margin-bottom: 36px;
+  }
+
+  .steps .subtitle {
+    margin-bottom: 11px;
+  }
+
+  .steps__info {
+    margin-right: 50px;
+    width: calc(437 / 924 * 100%);
+  }
+
+  .steps__texts {
+    margin-bottom: 24px;
+  }
+
+  .steps__wrap::after {
+    margin-top: 10px;
+    width: calc(437 / 924 * 100%);
+    min-height: 689px;
+    background-image: url(../img/steps-work-1024.png);
+  }
+}
+
+
+@media (max-width: 900px) {
+  .steps {
+    padding-top: 40px;
+  }
+  .steps__wrap {
+    flex-direction: column-reverse;
+  }
+
+  .steps .title {
+    margin-bottom: 33px;
+  }
+
+  .steps__wrap::after {
+    margin-left: 0;
+    margin-bottom: 40px;
+    margin-top: 0;
+    width: 100%;
+    min-height: 284px;
+    background-image: url(../img/steps-work-768.png);
+    border-radius: 24px;
+  }
+
+  .steps .subtitle {
+    margin-bottom: 11px;
+  }
+
+  .steps__info {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .steps {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .steps .title {
+    margin-bottom: 20px;
+  }
+
+  .steps__wrap::after {
+    margin-bottom: 18px;
+    width: 100%;
+    min-height: 160px;
+    background-image: url(../img/steps-work-320.png);
+    border-radius: 16px;
+  }
+
+  .steps__subtitle {
+    line-height: 32px;
+  }
+
+  .steps .subtitle {
+    margin-bottom: 7px;
+  }
+
+  .steps__btns {
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .steps__btn {
+    padding: 12px 44px;
+  }
+
+  .steps__btn--black {
+    padding: 12px 32px;
+  }
+}
